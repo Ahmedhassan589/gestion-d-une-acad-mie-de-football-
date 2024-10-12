@@ -1,5 +1,7 @@
 Notre projet de gestion d'académie de football, avec des inscriptions et paiements en ligne à Djibouti, peut répondre aux besoins locaux et atteindre des objectifs de modernisation,d'accessibilité et d'efficacité.
+
 Les parents et les joueurs doivent pouvoir s'inscrire depuis chez eux, sans avoir besoin de se déplacer. Ce qui est important, surtout si l'académie est loin.La possibilité de payer en ligne permet aux parents de payer facilement les frais d’inscription et les cotisations, même s’ils ne peuvent pas aller à l’académie en personne. En ligne, l’académie peut suivre toutes les inscriptions et les paiements sans faire d’erreurs, ce qui rend la gestion plus facile et rapide.
+
 Plus de joueurs peuvent s’inscrire, car le processus est facile et accessible à tout moment,même pour ceux qui vivent loin.Les paiements en ligne, via mobile ou d’autres méthodes locales,sont plus sûrs que l’argent en liquide et permettent de mieux suivre les paiements.Les parents peuvent voir facilement les paiements effectués et les coûts restants, ce qui améliore la confiance dans l’académie.En offrant des services modernes comme l’inscription et le paiement en ligne, l’académie devient plus professionnelle, ce qui attire plus de jeunes joueurs et renforce sa réputation.
 
 La découpage du projet, l'étude de préliminaire, l'étude détaillée et l'étude technique sont des étapes essentielles pour les détails du projet.
