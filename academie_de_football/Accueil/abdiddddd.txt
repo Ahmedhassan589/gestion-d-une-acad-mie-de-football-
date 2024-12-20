@@ -1,0 +1,76 @@
+<form action="" method="POST" id="ajouter" class="ajouter">
+                                        <div class="form-element">
+                                                        <button class="btn-close-inscrit">X</button>
+                                        </div>
+                                            <h2>Ajouter</h2>
+                                            <div class="form-element">
+                                                <label for="num">Identifiant</label>
+                                                <input type="number" placeholder="identifiant" id="num">
+                                            </div>
+                                            <div class="form-element">
+                                                <label for="Nom">Nom</label>
+                                                <input type="text" placeholder="Entrez votre Nom" id="Nom">
+                                            </div>
+                                            <div class="form-element">
+                                                <label for="Prenom">Prenom</label>
+                                                <input type="text" placeholder="Entrez votre Prenom" id="Prenom">
+                                            </div>
+                                            <div class="form-element">
+                                                <label for=" Adresse">Adresse</label>
+                                                <input type="text" placeholder="Entrez votre Adresse" id=" Adresse">
+                                            </div>
+                                            <div class="form-element">
+                                                <label for="email">Email</label>
+                                                <input type="email" placeholder="Entrez votre email" id="email">
+                                            </div>
+                                            <div class="form-element">
+                                                <label for="motpass">Password</label>
+                                                <input type="password" placeholder="Entrez votre mot de passe" id="motpass">
+                                            </div>
+                                            <div class="form-element">
+                                                <button>Executer</button>
+                                            </div>
+                                            <!-- <div class="form-element">
+                                                <a href="#" >sign in</a>
+                                            </div> -->
+                            </form>
+                            <form action="" method="POST" id="modifier" class="modifier">
+                                <div class="form-element">
+                                    <button class="btn-close-inscrit">X</button>
+                    </div>
+                        <h2>modifier</h2>
+                        <div class="form-element">
+                            <label for="num">Identifiant</label>
+                            <input type="number" placeholder="identifiant" id="num">
+                        </div>
+                        <div class="form-element">
+                            <label for="Nom">Nom</label>
+                            <input type="text" placeholder="Entrez votre Nom" id="Nom">
+                        </div>
+                        <div class="form-element">
+                            <label for="Prenom">Prenom</label>
+                            <input type="text" placeholder="Entrez votre Prenom" id="Prenom">
+                        </div>
+                        <div class="form-element">
+                            <label for=" Adresse">Adresse</label>
+                            <input type="text" placeholder="Entrez votre Adresse" id=" Adresse">
+                        </div>
+                        <div class="form-element">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Entrez votre email" id="email">
+                        </div>
+                        <div class="form-element">
+                            <label for="motpass">Password</label>
+                            <input type="password" placeholder="Entrez votre mot de passe" id="motpass">
+                        </div>
+                        <div class="form-element">
+                            <button>Executer</button>
+                        </div>  
+                            </form>
+                            <form action="" method="POST" id="supprimer" class="suprimer">
+                                    <div class="suppinput">
+                                        <label for="sup">suprimer</label>
+                                        <input type="number" placeholder="Entrez le id que vous voulez suprimer" id="sup" name="sup" >
+                                        <input type="submit" value="Executer">
+                                    </div>
+                            </form>

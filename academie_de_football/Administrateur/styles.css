@@ -1,0 +1,1227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'poppin',sans-serif;
+}
+.slidebar{
+    width: 345px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #ff7200;
+    z-index: 100;
+}
+.slidebar-brand{
+    display: flex;
+    height: 90px;
+    padding: 1rem 0rem 1rem 2rem;
+    color: white;
+    text-decoration: none;
+}
+.slidebar-brand span{
+    display: block;
+    padding-right:1rem; 
+}
+.slidebar-menu{
+    margin-top: 1rem;
+}
+.slidebar-menu li{
+    width: 100%;
+    margin-bottom: 1.3rem;
+    padding-left: 2rem;
+}
+.slidebar-menu a{
+    padding-left: 1rem;
+    display: block;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: 0.3s ease-in;
+}
+.slidebar-menu a.active{
+    background-color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #ff7200;
+    border-radius: 30px 0 0 30px;
+}
+.slidebar-menu a:hover{
+    background-color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #ff7200;
+    border-radius: 30px 0 0 30px;
+}
+.slidebar-menu a span:first-child{
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+.main-content{
+    margin-left: 345px;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
+    position: fixed;
+    left: 345px;
+    width: calc(100% - 345px);
+    top: 0;
+    z-index: 100;
+}
+header h2{
+    color: #222;
+}
+header label span{
+    font-size: 1.7rem;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+.search-wrapper{
+    border: 1px solid #f0f0f0;
+    border-radius: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+.search-wrapper span{
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 1.4rem;
+}
+.search-wrapper input{
+    height: 100%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+   
+}
+.user-wrapper{
+    display: flex;
+    align-items: center;
+}
+.user-wrapper img{
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.user-wrapper small{
+    display: inline-block;
+    color: #ff7200;
+    margin-top: -3px !important;
+}
+
+main{
+    margin-top: 85px;
+    padding: 2rem 1.5rem;
+    background: #f1f5f9;
+    min-height: calc(100vh - 90px);
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+.card-single{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1.7rem;
+    border-radius: 2px;
+}
+.card-single div:last-child span{
+   font-size: 3rem;
+   color: #222;
+}
+.card-single  span{
+    color: #ff7200;
+ }
+ .card-single:last-child{
+     background-color: aqua;
+ }
+ 
+ .card-single:last-child h1 ,
+ .card-single:last-child div:first-child span,
+ .card-single:last-child div:last-child span{
+    color: #fff;
+  }
+
+  main{
+      position: relative;
+      /* overflow: hidden; */
+  }
+
+  main .tables{
+      display: flex;
+      padding: 5px 5px;
+      /* justify-content: space-between; */
+      width: 100%;
+      position: absolute;
+      opacity: 0;
+      transition: 0.3s ease-in-out;
+      /* background-color: red; */
+      /* z-index: 100; */
+  }
+
+  main .tables .tableau{
+      width: 97%;
+      height: 100vh;
+      background-color: #fff;
+      box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
+      margin-right: 8px;
+  }
+  main .tables .addbtn button{
+      padding: 20px 20px;
+      background-color: blue;
+      color: white;
+      margin-left: 4px;
+      margin-top: 5px;
+      width: 200px;
+      border-radius: 10px;
+  }
+
+
+
+  main .tables table{
+	border-collapse: collapse;
+	/*flex-grow: 2;*/
+    width: 100%;
+    margin-top: 10px
+}
+
+main .tables table thead th{
+	color: white;
+	background-color: black;
+    border: 1px solid rgb(174, 200, 249);
+    padding: 10px;
+	
+}
+main .tables table tbody tr td{
+	border: 1px solid rgb(174, 200, 249);
+	text-align: center;
+	/*flex-grow: 1;*/
+
+}
+
+main .tables table tbody tr td button{
+    display: flex;
+    justify-content: space-around;
+    width: 78%;
+    padding: 3px 6px;
+    background-color: #fff;
+    /* box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2); */
+    font-size: 1.4rem;
+    color: #ff7200;
+    transition: 0.5 ease-in-out;
+}
+main .tables table tbody tr td button:hover{
+    background-color: #ff7200;
+    color: white;
+}
+main .tables table tbody tr td:nth-child(7) button span{
+    color: blue;
+}
+main .tables table tbody tr td:nth-child(8) button span{
+    color: red;
+}
+main .tables table tbody tr td:nth-child(8) button:hover span{
+    color: white;
+}
+main .tables table .td{
+	background-color: #f5f5f5;
+}
+@media (max-width: 582px){
+    main .tables  table thead{
+	 	display: none;
+	 }
+     main .tables table td,tr{
+	 	display: block;
+	 	width: 100%;
+	 }
+     main .tables table tr{
+	 	margin-bottom: 5%;
+	 }
+     main .tables table tbody tr td{
+	 	font-weight: bold;
+	 	text-align: right;
+	 	background-color: #fef5ff;
+	 	/*color: white;*/
+     }
+    
+     main .tables table tbody tr td:before{
+	 	content: attr(data-label);
+	 	position: absolute;
+	 	left: 0;
+	 	width: 50%;
+	 	padding-left: 15px;
+	 	font-weight: 600;
+	 	font-size: 1.1em;
+	 	text-align: left;
+
+
+
+	 }
+
+
+}
+
+
+
+ 
+.ajouter{
+    position: absolute;
+    top: 20%;
+    right: -2330%;
+    opacity: 0;
+    transform: translate(-40%,-30%) scale(1.25);
+    width: 400px;
+    padding: 20px 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0,0, 0.15);
+    border-radius: 10px;
+    z-index: 20000;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform  20ms ease-in-out 0ms;
+
+}
+.ajouter.activation{
+    right: 30%;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1); 
+    transition: top 0ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms,
+    transform  20ms ease-in-out 0ms;
+}
+.ajouter h2{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 15px;
+    font-size: 14px;
+}
+.ajouter .form-element{
+  margin: 10px 0;
+}
+.ajouter .form-element label{
+  font-size: 9px;
+  color: #222;
+}
+.ajouter .form-element input[type="email"],
+.ajouter .form-element input[type="text"],
+.ajouter .form-element input[type="number"],
+.ajouter .form-element input[type="password"]{
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 6px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.ajouter .form-element button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    color: #fff;
+    background-color: #222;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.ajouter .form-element button:hover{
+    background-color: #ff7200;
+}
+/* .ajouter .form-element a{
+    display: block;
+    text-align: right;
+    font-size: 10px;
+    color: #ff7200;
+    text-decoration: none;
+    font-weight: 600;
+    /* text-transform: capitalize; 
+} */
+.ajouter .form-element .btn-close-inscrit{
+    float: right;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 600;
+    /* text-transform: capitalize; */
+}
+
+
+
+
+
+ .tables2{
+    display: flex;
+    padding: 5px 5px;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    /* z-index: ; */
+}
+
+main .tables2 .tableau1{
+    width: 97%;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
+    margin-right: 8px;
+}
+main .tables2 .addbtn button{
+    padding: 20px 20px;
+    background-color: blue;
+    color: white;
+    margin-left: 4px;
+    margin-top: 5px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+
+main .tables2 table{
+  border-collapse: collapse;
+  /*flex-grow: 2;*/
+  width: 100%;
+  margin-top: 10px
+}
+
+main .tables2 table thead th{
+  color: white;
+  background-color: black;
+  border: 1px solid rgb(174, 200, 249);
+  padding: 10px;
+  
+}
+main .tables2 table tbody tr td{
+  border: 1px solid rgb(174, 200, 249);
+  text-align: center;
+  /*flex-grow: 1;*/
+
+}
+
+main .tables2 table tbody tr td button{
+  display: flex;
+  justify-content: space-around;
+  width: 78%;
+  padding: 3px 6px;
+  background-color: #fff;
+  /* box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2); */
+  font-size: 1.4rem;
+  color: #ff7200;
+  transition: 0.5 ease-in-out;
+}
+main .tables2 table tbody tr td button:hover{
+  background-color: #ff7200;
+  color: white;
+}
+main .tables2 table tbody tr td:nth-child(7) button span{
+  color: blue;
+}
+main .tables2 table tbody tr td:nth-child(8) button span{
+  color: red;
+}
+main .tables2 table tbody tr td:nth-child(8) button:hover span{
+  color: white;
+}
+main .tables2 table .td{
+  background-color: #f5f5f5;
+}
+@media (max-width: 582px){
+  main .tables2  table thead{
+       display: none;
+   }
+   main .tables2 table td,tr{
+       display: block;
+       width: 100%;
+   }
+   main .tables2 table tr{
+       margin-bottom: 5%;
+   }
+   main .tables2 table tbody tr td{
+       font-weight: bold;
+       text-align: right;
+       background-color: #fef5ff;
+       /*color: white;*/
+   }
+  
+   main .tables2 table tbody tr td:before{
+       content: attr(data-label);
+       position: absolute;
+       left: 0;
+       width: 50%;
+       padding-left: 15px;
+       font-weight: 600;
+       font-size: 1.1em;
+       text-align: left;
+
+
+
+   }
+
+
+}
+
+
+.Ajouterjoueur{
+    position: absolute;
+    top: 28%;
+    right: -1130%;
+    opacity: 0;
+    transform: translate(-40%,-30%) scale(1.25);
+    width: 400px;
+    padding: 20px 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0,0, 0.15);
+    border-radius: 10px;
+    z-index: 20000;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform  20ms ease-in-out 0ms;
+
+}
+.Ajouterjoueur.activation{
+    right: 30%;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1); 
+    transition: top 0ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms,
+    transform  20ms ease-in-out 0ms;
+}
+.Ajouterjoueur h2{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 15px;
+    font-size: 14px;
+}
+.Ajouterjoueur .form-element{
+  margin: 10px 0;
+}
+.Ajouterjoueur .form-element label{
+  font-size: 9px;
+  color: #222;
+}
+.Ajouterjoueur .form-element input[type="email"],
+.Ajouterjoueur .form-element input[type="text"],
+.Ajouterjoueur .form-element input[type="number"],
+.Ajouterjoueur .form-element input[type="password"]{
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 6px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.Ajouterjoueur .form-element button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    color: #fff;
+    background-color: #222;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.Ajouterjoueur .form-element button:hover{
+    background-color: #ff7200;
+}
+/* .ajouter .form-element a{
+    display: block;
+    text-align: right;
+    font-size: 10px;
+    color: #ff7200;
+    text-decoration: none;
+    font-weight: 600;
+    /* text-transform: capitalize; 
+} */
+.Ajouterjoueur .form-element .btn-close-inscrit{
+    float: right;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 600;
+    /* text-transform: capitalize; */
+}
+
+
+
+
+
+.tables3{
+    display: flex;
+    padding: 5px 5px;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+main .tables3 .tableau2{
+    width: 97%;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
+    margin-right: 8px;
+}
+main .tables3 .addbtn button{
+    padding: 20px 20px;
+    background-color: blue;
+    color: white;
+    margin-left: 4px;
+    margin-top: 5px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+
+main .tables3 table{
+  border-collapse: collapse;
+  /*flex-grow: 2;*/
+  width: 100%;
+  margin-top: 10px
+}
+
+main .tables3 table thead th{
+  color: white;
+  background-color: black;
+  border: 1px solid rgb(174, 200, 249);
+  padding: 10px;
+  
+}
+main .tables3 table tbody tr td{
+  border: 1px solid rgb(174, 200, 249);
+  text-align: center;
+  /*flex-grow: 1;*/
+
+}
+
+main .tables3 table tbody tr td button{
+  display: flex;
+  justify-content: space-around;
+  width: 78%;
+  padding: 3px 6px;
+  background-color: #fff;
+  /* box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2); */
+  font-size: 1.4rem;
+  color: #ff7200;
+  transition: 0.5 ease-in-out;
+}
+main .tables3 table tbody tr td button:hover{
+  background-color: #ff7200;
+  color: white;
+}
+main .tables3 table tbody tr td:nth-child(7) button span{
+  color: blue;
+}
+main .tables3 table tbody tr td:nth-child(8) button span{
+  color: red;
+}
+main .tables3 table tbody tr td:nth-child(8) button:hover span{
+  color: white;
+}
+main .tables3 table .td{
+  background-color: #f5f5f5;
+}
+@media (max-width: 582px){
+  main .tables3  table thead{
+       display: none;
+   }
+   main .tables3 table td,tr{
+       display: block;
+       width: 100%;
+   }
+   main .tables3 table tr{
+       margin-bottom: 5%;
+   }
+   main .tables3 table tbody tr td{
+       font-weight: bold;
+       text-align: right;
+       background-color: #fef5ff;
+       /*color: white;*/
+   }
+  
+   main .tables3 table tbody tr td:before{
+       content: attr(data-label);
+       position: absolute;
+       left: 0;
+       width: 50%;
+       padding-left: 15px;
+       font-weight: 600;
+       font-size: 1.1em;
+       text-align: left;
+
+
+
+   }
+
+
+}
+
+.AjouterEquipes{
+    position: absolute;
+    top: 50%;
+    right: -1130%;
+    opacity: 0;
+    transform: translate(-40%,-30%) scale(1.25);
+    width: 400px;
+    padding: 20px 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0,0, 0.15);
+    border-radius: 10px;
+    z-index: 20000;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform  20ms ease-in-out 0ms;
+
+}
+.AjouterEquipes.activation{
+    right: 30%;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1); 
+    transition: top 0ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms,
+    transform  20ms ease-in-out 0ms;
+}
+.AjouterEquipes h2{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 15px;
+    font-size: 14px;
+}
+.AjouterEquipes .form-element{
+  margin: 10px 0;
+}
+.AjouterEquipes .form-element label{
+  font-size: 9px;
+  color: #222;
+}
+.AjouterEquipes .form-element input[type="email"],
+.AjouterEquipes .form-element input[type="text"],
+.AjouterEquipes .form-element input[type="number"],
+.AjouterEquipes .form-element input[type="password"]{
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 6px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.AjouterEquipes .form-element button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    color: #fff;
+    background-color: #222;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.AjouterEquipes .form-element button:hover{
+    background-color: #ff7200;
+}
+/* .ajouter .form-element a{
+    display: block;
+    text-align: right;
+    font-size: 10px;
+    color: #ff7200;
+    text-decoration: none;
+    font-weight: 600;
+    /* text-transform: capitalize; 
+} */
+.AjouterEquipes .form-element .btn-close-inscrit{
+    float: right;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 600;
+    /* text-transform: capitalize; */
+}
+
+
+.tables4{
+    display: flex;
+    padding: 5px 5px;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+main .tables4 .tableau3{
+    width: 97%;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
+    margin-right: 8px;
+}
+main .tables4 .addbtn button{
+    padding: 20px 20px;
+    background-color: blue;
+    color: white;
+    margin-left: 4px;
+    margin-top: 5px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+
+main .tables4 table{
+  border-collapse: collapse;
+  /*flex-grow: 2;*/
+  width: 100%;
+  margin-top: 10px
+}
+
+main .tables4 table thead th{
+  color: white;
+  background-color: black;
+  border: 1px solid rgb(174, 200, 249);
+  padding: 10px;
+  
+}
+main .tables4 table tbody tr td{
+  border: 1px solid rgb(174, 200, 249);
+  text-align: center;
+  /*flex-grow: 1;*/
+
+}
+
+main .tables4 table tbody tr td button{
+  display: flex;
+  justify-content: space-around;
+  width: 78%;
+  padding: 3px 6px;
+  background-color: #fff;
+  /* box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2); */
+  font-size: 1.4rem;
+  color: #ff7200;
+  transition: 0.5 ease-in-out;
+}
+main .tables4 table tbody tr td button:hover{
+  background-color: #ff7200;
+  color: white;
+}
+main .tables4 table tbody tr td:nth-child(7) button span{
+  color: blue;
+}
+main .tables4 table tbody tr td:nth-child(8) button span{
+  color: red;
+}
+main .tables4 table tbody tr td:nth-child(8) button:hover span{
+  color: white;
+}
+main .tables4 table .td{
+  background-color: #f5f5f5;
+}
+@media (max-width: 582px){
+  main .tables4  table thead{
+       display: none;
+   }
+   main .tables4 table td,tr{
+       display: block;
+       width: 100%;
+   }
+   main .tables4 table tr{
+       margin-bottom: 5%;
+   }
+   main .tables4 table tbody tr td{
+       font-weight: bold;
+       text-align: right;
+       background-color: #fef5ff;
+       /*color: white;*/
+   }
+  
+   main .tables4 table tbody tr td:before{
+       content: attr(data-label);
+       position: absolute;
+       left: 0;
+       width: 50%;
+       padding-left: 15px;
+       font-weight: 600;
+       font-size: 1.1em;
+       text-align: left;
+
+
+
+   }
+
+
+}
+
+.AjouterEntraineur{
+    position: absolute;
+    top: 50%;
+    right: -1130%;
+    opacity: 0;
+    transform: translate(-40%,-30%) scale(1.25);
+    width: 400px;
+    padding: 20px 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0,0, 0.15);
+    border-radius: 10px;
+    z-index: 20000;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform  20ms ease-in-out 0ms;
+
+}
+.AjouterEntraineur.activation{
+    right: 30%;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1); 
+    transition: top 0ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms,
+    transform  20ms ease-in-out 0ms;
+}
+.AjouterEntraineur h2{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 15px;
+    font-size: 14px;
+}
+.AjouterEntraineur .form-element{
+  margin: 10px 0;
+}
+.AjouterEntraineur .form-element label{
+  font-size: 9px;
+  color: #222;
+}
+.AjouterEntraineur .form-element input[type="email"],
+.AjouterEntraineur .form-element input[type="text"],
+.AjouterEntraineur .form-element input[type="number"],
+.AjouterEntraineur .form-element input[type="password"]{
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 6px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.AjouterEntraineur .form-element button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    color: #fff;
+    background-color: #222;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.AjouterEntraineur .form-element button:hover{
+    background-color: #ff7200;
+}
+
+.AjouterEntraineur .form-element .btn-close-inscrit{
+    float: right;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 600;
+    /* text-transform: capitalize; */
+}
+
+
+.tables5{
+    display: flex;
+    padding: 5px 5px;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+main .tables5 .tableau4{
+    width: 97%;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
+    margin-right: 8px;
+}
+main .tables5 .addbtn button{
+    padding: 20px 20px;
+    background-color: blue;
+    color: white;
+    margin-left: 4px;
+    margin-top: 5px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+
+main .tables5 table{
+  border-collapse: collapse;
+  /*flex-grow: 2;*/
+  width: 100%;
+  margin-top: 10px
+}
+
+main .tables5 table thead th{
+  color: white;
+  background-color: black;
+  border: 1px solid rgb(174, 200, 249);
+  padding: 10px;
+  
+}
+main .tables5 table tbody tr td{
+  border: 1px solid rgb(174, 200, 249);
+  text-align: center;
+  /*flex-grow: 1;*/
+
+}
+
+main .tables5 table tbody tr td button{
+  display: flex;
+  justify-content: space-around;
+  width: 78%;
+  padding: 3px 6px;
+  background-color: #fff;
+  /* box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2); */
+  font-size: 1.4rem;
+  color: #ff7200;
+  transition: 0.5 ease-in-out;
+}
+main .tables5 table tbody tr td button:hover{
+  background-color: #ff7200;
+  color: white;
+}
+main .tables5 table tbody tr td:nth-child(7) button span{
+  color: blue;
+}
+main .tables5 table tbody tr td:nth-child(8) button span{
+  color: red;
+}
+main .tables5 table tbody tr td:nth-child(8) button:hover span{
+  color: white;
+}
+main .tables5 table .td{
+  background-color: #f5f5f5;
+}
+@media (max-width: 582px){
+  main .tables5  table thead{
+       display: none;
+   }
+   main .tables5 table td,tr{
+       display: block;
+       width: 100%;
+   }
+   main .tables5 table tr{
+       margin-bottom: 5%;
+   }
+   main .tables5 table tbody tr td{
+       font-weight: bold;
+       text-align: right;
+       background-color: #fef5ff;
+       /*color: white;*/
+   }
+  
+   main .tables5 table tbody tr td:before{
+       content: attr(data-label);
+       position: absolute;
+       left: 0;
+       width: 50%;
+       padding-left: 15px;
+       font-weight: 600;
+       font-size: 1.1em;
+       text-align: left;
+
+
+
+   }
+
+
+}
+
+.AjouterFormateur{
+    position: absolute;
+    top: 50%;
+    right: -1130%;
+    opacity: 0;
+    transform: translate(-40%,-30%) scale(1.25);
+    width: 400px;
+    padding: 20px 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0,0, 0.15);
+    border-radius: 10px;
+    z-index: 20000;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform  20ms ease-in-out 0ms;
+
+}
+.AjouterFormateur.activation{
+    right: 30%;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1); 
+    transition: top 0ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms,
+    transform  20ms ease-in-out 0ms;
+}
+.AjouterFormateur h2{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 15px;
+    font-size: 14px;
+}
+.AjouterFormateur .form-element{
+  margin: 10px 0;
+}
+.AjouterFormateur .form-element label{
+  font-size: 9px;
+  color: #222;
+}
+.AjouterFormateur .form-element input[type="email"],
+.AjouterFormateur .form-element input[type="text"],
+.AjouterFormateur .form-element input[type="number"],
+.AjouterFormateur .form-element input[type="password"]{
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 6px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 5px; 
+}
+.AjouterFormateur .form-element button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    color: #fff;
+    background-color: #222;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.AjouterFormateur .form-element button:hover{
+    background-color: #ff7200;
+}
+
+.AjouterFormateur .form-element .btn-close-inscrit{
+    float: right;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 600;
+    /* text-transform: capitalize; */
+}
+
+.tables6{
+    display: flex;
+    padding: 5px 5px;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+main .tables6 .tableau5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97%;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
+    margin-right: 8px;
+    position: relative;
+    flex-direction: column;
+}
+main .tables6 .tableau5 .error{
+    color: #ff7200;
+    text-align: center;
+    font-size: 14px;
+    transition: .5s ease-in-out;
+    animation: anime 0.5s ease-out;
+    margin-bottom: 10px;
+}
+@keyframes anime{
+    from{
+        transform: translateY(-50px);
+    }
+}
+
+main .tables6 .tableau5 form{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 2px 2px 7px rgba(0, 0,0, 0.2);
+    padding: 15px;
+    border-radius: 6px;
+    width: 350px;
+
+}
+main .tables6 .tableau5 form label{
+    margin-bottom: 10px;
+}
+main .tables6 .tableau5 form ::-webkit-file-upload-button{
+    padding: 5px 25px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    background-color: #ff7200;
+    border-radius: 6px;
+}
+
+main .tables6 .tableau5 form input,
+main .tables6 .tableau5 form textarea{
+    margin-bottom: 7px;
+    padding: 10px;
+    resize: none;
+    outline: 0;
+    border-radius: 6px;
+}
+
+
+main .tables6 .tableau5 form input[type="submit"]{
+    margin-bottom: 0px;
+    background-color: #ff7200;
+    color: #fff;
+    border: 0;
+}
+
+

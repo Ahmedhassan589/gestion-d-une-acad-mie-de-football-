@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+}
+
+button{
+    padding: 20px 10px;
+    width: 300px;
+    font-size: 2rem;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+h2{
+    display: none;
+}
+section{
+    height: 300px;
+    width: 700px;
+    /* background-color: brown; */
+    border: 1px solid black;
+    padding: 10px 5px;
+    margin: 10px;
+}
+h1{
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+}
+p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 30px;
+}

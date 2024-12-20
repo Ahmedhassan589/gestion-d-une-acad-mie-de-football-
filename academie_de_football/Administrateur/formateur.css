@@ -1,0 +1,54 @@
+﻿body {
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('Cwamp64/www/site/web/Administrateur/images/Im5.JPG') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    padding: 1px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    max-width: 20px;
+    margin: 0px auto;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+table {
+    width: 10%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 15px;
+}
+
+input[type="submit"] {
+    padding: 0px 5px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff0080;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}

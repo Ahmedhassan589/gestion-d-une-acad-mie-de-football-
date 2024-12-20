@@ -1,0 +1,58 @@
+body{
+   text-align: center;
+   background-image: url(dodo.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+  
+}
+h4{
+    color: rgba(255, 255, 0, 0.815);
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-variant: small-caps;
+    
+}
+.u{
+    padding: 20px;
+    padding-bottom: 120px;
+   
+    border: 10px solid blanchedalmond;
+   
+    background-image: url(comedi.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+   margin: 0px auto;
+   margin-left: 25%;
+   margin-right:25% ;
+    text-align: center;
+    color: lime;
+    font-size: 200%;
+
+}
+.s{
+    margin-top: 19%;
+   
+    font-weight: bold;
+    
+    font-size: 20px;
+    text-transform: uppercase;
+   
+}
+a{
+    text-decoration:none ;
+    color: white;
+    text-shadow: 4px 5px 10PX purple;
+    display: inline-block;
+}
+.d{
+    font-weight: bold;
+    
+    font-size: 20px;
+    text-transform: uppercase;  
+}
